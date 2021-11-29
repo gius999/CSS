@@ -1,48 +1,42 @@
 .title-1{
-    color: blueviolet;
-    background-color: chartreuse;
-    font-size: small;
+    color: rgb(245, 0, 0);
+    background-color: rgba(128, 255, 0, 0);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
-.title-2{
-    color: rgb(48, 63, 33);
-    background-color: cyan;
-    font-size: x-large;
-}
-
-.title-3{
-    color: rgb(red, green, blue);
-    background-color: rgb(48, 63, 33);
-    font-size: xx-large;
-}
-
-.title-4{
-    color: rgb(red, green, blue);
-    background-color: rgb(48, 63, 33);
-    font-size: 25px;
-}
 .raime{
     width: 200px;
-    height: 500px;
-    background-color: rgb(48, 63, 33);
+    height: 200px;
+    background-color: rgba(48, 63, 33, 0);
+    text-align: right;
 }
 p{
     color: seashell;
 }
 
+.NAV{
+    background-color: black;
+}
+
 .HOME{
-    color: sienna;
-    font-size: 50px;
+    color: rgb(0, 255, 213);
+    font-size: 15px;
     font-style: oblique;
+    text-align: left;
 }
 
 .CONTACT{
-    color: sienna;
-    font-size: 50px;
+    color: rgb(0, 255, 213);
+    font-size: 15px;
     font-style: oblique;
+    text-align: left;
 }
 
-.NAV{
-    background-color: skyblue;
-    font-style: 200px;
+.MENU{
+    color: rgb(0, 255, 213);
+    font-size: 15px;
+    font-style: oblique;
+    text-align: left;
 }
