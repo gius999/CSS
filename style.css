@@ -6,13 +6,165 @@
     text-align: center;
 }
 
-.raime{
-    width: 200px;
-    height: 200px;
-    background-color: rgba(48, 63, 33, 0);
-    text-align: right;
+.style{
+  background-image: no-repeat
 }
-p{
+  
+}
+
+body{
+	margin:0;
+	color:#c0a4a4;
+	background:#d6bebe;
+	font:600 16px/18px 'Open Sans',sans-serif;
+  
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+	width:100%;
+	margin:auto;
+	max-width:525px;
+	min-height:670px;
+	position:relative;
+	background:url(https://mocah.org/uploads/posts/541657-cod-wallpaper.jpg) no-repeat center;
+	box-shadow:0 12px 15px 0 rgba(148, 31, 31, 0.562),0 17px 50px 0 rgba(173, 46, 46, 0.459);
+}
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+	background:rgba(75, 74, 74, 0.021);
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+	text-transform:uppercase;
+}
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	color:#fff;
+	border-color:#d32222;
+}
+.login-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width:100%;
+	color:rgb(255, 255, 255);
+	display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255, 255, 255, 0.466);
+}
+.login-form .group input[data-type="password"]{
+	text-security:circle;
+	-webkit-text-security:circle;
+}
+.login-form .group .label{
+	color:rgba(197, 39, 39, 0.616);
+	font-size:16px;
+}
+.login-form .group .button{
+	background:#c0242465;
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(245, 0, 0, 0.527);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+	color:#fff;
+}
+.login-form .group .check:checked + label .icon{
+	background:#c9262662;
+}
+.login-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+	transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+	transform:rotate(0);
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255, 255, 255, 0.438);
+}
+.foot-lnk{
+	text-align:center;
+}
+
+{
     color: seashell;
 }
 
@@ -76,7 +228,7 @@ a {
 	padding-top: .5em;
 	padding-bottom: .5em;
 	border: 1px solid #ad3939;
-	background-color: #383838;
+	background-color: #72717154;
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
@@ -133,8 +285,9 @@ a {
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
     color: hsl(0, 0%, 100%);
-    background-color: rgb(43, 43, 43);
+    background-color: rgba(255, 255, 255, 0.521); 
     border-top: 1px solid hsl(0, 74%, 41%);
+    
   }
   
   .footer > * {
